@@ -2,11 +2,11 @@
 
 <h3>
 
-`Fetches 20 results at a time from the wikipedia`
+Fetches 20 results at a time from the wikipedia
 
-`Displays Title Thumbnail Extract about the searches`
+Displays Title Thumbnail Extract about the searches
 
-`Light & Dart Theme Enabled`
+Light & Dart Theme Enabled
 
 </h3>
 
