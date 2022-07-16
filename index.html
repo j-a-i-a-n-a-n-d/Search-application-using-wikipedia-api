@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <link   rel="stylesheet" 
+            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" 
+            integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" 
+            crossorigin="anonymous" 
+            referrerpolicy="no-referrer" />
+    <link   rel="preconnect"
+            href="https://fonts.googleapis.com">
+    <link 
+            rel="preconnect" 
+            href="https://fonts.gstatic.com" 
+            crossorigin>
+    <link   href="https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap" 
+            rel="stylesheet">
+    <link rel="stylesheet" href="sass/styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <link rel="stylesheet" href="theme toggler/css/style.css">
+    <script src="./JavaScript/main.js" type="module"></script>
+    <script src="/theme toggler/js/script.js" type="module"></script>
+    <title>Search App</title>
+</head>
+<body>
+    <div aria-hidden="true">
+        <div id="theme-open" class="fas fa-bars "></div>
+            <div class="themes-container">
+            
+                <div id="theme-close" class="fas fa-times">
+                </div>
+                <h3>Switch Theme</h3>
+                <div class="theme-toggler">
+                    <span>light</span>
+                    <span class="toggler"></span>
+                    <span>dark</span>
+                </div>
+            </div>
+    </div>
+        <section class="searchEntry">
+            <h2 class="offscreen">Search Term Entry</h2>
+            <div class="logo" aria-hidden="true">
+                <span class="blue">S</span>
+                <span class="red">e</span>
+                <span class="yellow">a</span>
+                <span class="blue">r</span>
+                <span class="green">c</span>
+                <span class="red">h</span>
+                <span class="blue">M</span>
+                <span class="yellow">e</span>
+                <span class="red"><B>!</B></span>
+            </div>
+            <form id="searchBar" class="searchBar" role="search">
+                <label class="offscreen" for="search">Enter a search Term</label>
+                <input id="search" type="text" autocomplete="off" role="searchbox"/>
+                <div id="clear" class="none button clear" role="button" tabindex="0" aria-label="Clear search terms">
+                    <i class="fa-solid fa-x"></i>
+                </div>
+                <button id="searchbutton" class="button searchButton" type="submit" aria-label="Submit button">
+                    <i class="fa-solid fa-magnifying-glass blue"></i>
+                    <!--magnifying glass-->
+                </button>
+            </form>
+        </section>
+
+        
+        <!--result section -->
+        <section class="results">
+            <h2 class="offscreen">Search Results </h2>
+            <div class="statsBar">
+                <div id="stats" class="stats" aria-live="assertive"></div>
+            </div> 
+            <div id="searchResults" class="searchResults"></div>
+
+            <!--  <div class="resultItem">
+                    <div class="resultTitle">
+                        <a href="">Test</a>
+                    </div>
+                    <div class="resultContents">
+                        <div class="resultImage">
+                            <img src="" alt="test">
+                        </div>
+                        <div class="ResultText">
+                            <p class="resultDescription">About Result extract</p>
+                        </div>
+                    </div>
+                </div>
+            </div> -->
+        </section>
+    </main>
+
+    <!--footer-->
+    
+    <footer>
+        <p>
+            <span aria-hidden="true">&lt;&lt;</span>Powered by <a href="www.wikipedia.org" target="_blank" >Wikipedia</a><span aria-hidden="true">&gt;&gt;</span></p>
+    </footer>
+</body>
+</html>
